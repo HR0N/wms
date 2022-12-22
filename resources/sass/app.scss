@@ -4,9 +4,14 @@
 // Variables
 @import 'variables';
 
+// Settings
+@import 'settings';
 
-// Welcome
-@import 'welcome';
+// Default
+@import 'default';
+@import 'home';
+@import "home_frame_1";
+@import "header-component";
 
 // Bootstrap
 //@import 'bootstrap/scss/bootstrap';
