@@ -11,16 +11,17 @@
 <script>
     export default {
         name: "HeaderComponent",
+
         data: function () {
             return {
                 header: false,
+                header2: null,
             }
         },
 
         methods: {
             handleScroll: function () {
-                this.header = window.scrollY > 300;
-                console.log(this.header);
+                this.header = window.scrollY > 380;
             }
         },
 

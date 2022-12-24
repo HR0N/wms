@@ -6,6 +6,15 @@
 
 import './bootstrap';
 import { createApp } from 'vue';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faShopify } from '@fortawesome/free-brands-svg-icons';
+import { faUserSecret, faRocket, faCartShopping}
+from '@fortawesome/free-solid-svg-icons';
+import { faPaste } from '@fortawesome/free-regular-svg-icons';
+library.add(faUserSecret, faPaste, faRocket, faCartShopping, faShopify);
+
 import './jquery';
 
 /**
@@ -17,11 +26,16 @@ import './jquery';
 const app = createApp({});
 
 import ExampleComponent from './components/ExampleComponent.vue';
-import HomeFrame1Component from "./components/HomeFrame1Component.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
+import HomeFrame1Component from "./components/HomeFrame1Component.vue";
+import HomeFrame2Component from "./components/HomeFrame2Component.vue";
+import HomeFrame3Component from "./components/HomeFrame3Component.vue";
 app.component('example-component', ExampleComponent);
-app.component('home-frame1-component', HomeFrame1Component);
 app.component('header-component', HeaderComponent);
+app.component('home-frame1-component', HomeFrame1Component);
+app.component('home-frame2-component', HomeFrame2Component);
+app.component('home-frame3-component', HomeFrame3Component);
+app.component('font-awesome-icon', FontAwesomeIcon);
 
 /**
  * The following block of code may be used to automatically register your

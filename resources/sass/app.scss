@@ -9,13 +9,16 @@
 
 // Default
 @import 'default';
+@import "header_component";
 @import 'home';
 @import "home_frame_1";
-@import "header-component";
+@import "home_frame_2";
+@import "home_frame_3";
 
 // Bootstrap
 //@import 'bootstrap/scss/bootstrap';
+@import "h-boobstrap.css";
 
-#app{
+// Fonts
+//@import "fonts/fonts.css";
 
-}

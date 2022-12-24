@@ -5,8 +5,10 @@
             <img :src="img1">
             <img :src="img2">
             <img :src="img3">
+            <div class="frame5"></div>
+<!--            <img :src="img4">-->
         </div>
-        <div class="boost"></div>
+<!--        <div class="boost"></div>-->
     </div>
 </template>
 
@@ -15,6 +17,7 @@
     import imgFrame1 from "/public/mn-frames/bg-frame-1-1.webp";
     import imgFrame2 from "/public/mn-frames/bg-frame-1-2.webp";
     import imgFrame3 from "/public/mn-frames/bg-frame-1-3.webp";
+    // import imgFrame4 from "/public/mn-frames/next_img_1.png";
 
     export default {
         name: "HomeFrame1Component",
@@ -24,7 +27,10 @@
                 img1: imgFrame1,
                 img2: imgFrame2,
                 img3: imgFrame3,
+                // img4: imgFrame4,
             }
+        },
+        mounted() {
         }
     }
     window.addEventListener('scroll', e => {

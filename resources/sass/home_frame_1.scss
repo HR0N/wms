@@ -6,7 +6,6 @@
         height: 100vh;
         left: 0;
         top: 0;
-        overflow: hidden;
         img{
             position: absolute;
             width: 100%;
@@ -15,6 +14,7 @@
             left: 0;
             top: 0;
             transition: ease-out all .5s;
+            pointer-events: none;
             &:nth-child(1){
                 transform: translate3d(0, calc(var(--scrollTop) / 1), 0);
                 z-index: 1;
@@ -31,6 +31,22 @@
                 transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
                 z-index: 2;
             }
+            /*&:nth-child(5){
+                transform: translate3d(0, calc((var(--scrollTop) + 520px) / 1.2), 0);
+                object-fit: contain;
+                z-index: 1;
+            }*/
+        }
+        .frame5{
+            position: absolute;
+            top: 99%;
+            width: 100%;
+            height: 200px;
+            transform: translate3d(0, calc((var(--scrollTop)) / 1.2), 0);
+            z-index: 1;
+            transition: ease-out all .5s;
+            background: rgb(48,48,48);
+            background: linear-gradient(180deg, rgba(48,48,48,1) 0%, rgba(48,48,48,1) 70%, rgba(248, 246, 236, 0) 93%, rgba(248, 246, 236, 0) 100%);
         }
     }
     .boost{
