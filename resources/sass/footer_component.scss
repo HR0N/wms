@@ -1,0 +1,55 @@
+footer{
+    background-color: rgb(244,242,233);
+    padding: 40px 8% 80px;
+    font-family: "Comic Sans MS";
+
+    .footer-wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .row{
+            margin: 15px;
+            width: 175px;
+            display: flex;
+            flex-direction: column;
+            .title{
+                font-weight: 600;
+                color: #252525;
+                font-size: 1em;
+                margin-bottom: 15px;
+            }
+            a{
+                color: #5d5d5d;
+                font-weight: 400;
+                font-size: .9em;
+                text-decoration: none;
+                margin-bottom: 5px;
+                &:hover{
+                    text-decoration: underline;
+                    color: #6a6abf;
+                }
+            }
+            .phone_title{
+                color: #b1b1b1;
+            }
+            .phone{
+                font-weight: bold;
+            }
+            .socials{
+                display: grid;
+                column-gap: 10px;
+                grid-template-columns: repeat(2, min-content);
+                font-size: 2em;
+                svg{
+                    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+                    cursor: pointer;
+                }
+                .youtube{color: rgba(255, 0, 0, 0.8);}
+                .instagram{color: #532147;}
+            }
+            .adress{
+                color: #5d5d5d;
+            }
+        }
+    }
+}

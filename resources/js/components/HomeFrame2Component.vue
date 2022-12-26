@@ -20,7 +20,7 @@
             </div>
             <div class="card card1">
                 <div class="card-title">Сайт-Бизнесс</div>
-                <div class="card-icon"><font-awesome-icon icon="fa-brands fa-shopify" /></div>
+                <div class="card-icon"><font-awesome-icon icon="fa-solid fa-handshake" /></div>
                 <div class="card-description-1">от 5 дней</div>
                 <div class="card-description-2">многостраничный сайт</div>
                 <div class="card-price"><em>от </em>3500 грн.</div>

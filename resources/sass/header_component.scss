@@ -36,8 +36,10 @@ header{
     backdrop-filter: blur(5px);
     animation: linear forwards fade-in-down .5s;
     background-color: rgb(255, 255, 255, .3);
+    padding: 0;
     &:hover{
-        transition: linear all .2s;
+        background-color: rgb(255, 255, 255, .6);
+        transition: linear all .15s;
         padding: 10px 0;
     }
     nav .item a{

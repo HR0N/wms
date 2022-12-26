@@ -1,61 +1,67 @@
 .home-frame-3-wrapper{
-    margin-top: 200px;
-    background-color: rgb(14,14,14);
-    color: white;
-    width: 100%;
-    overflow: hidden;
-    padding: 100px 2%;
-    .wrap-3-title{
-        margin: 20px 0;
-        font-size: 32px;
-        font-family: "Segoe UI", serif;
-        span{
-            font-style: italic;
-            font-size: .8em;
-            margin-right: 100px;
-            &:before{
-                content: '/';
-                color: #4f5a90;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 300px;
+    text-align: center;
+    h3{
+        font-size: 3em;
+        font-family: "Comic Sans MS", sans-serif;
+        color: #2e2e2e;
+    }
+    .site-catalog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        width: 80%;
+        min-width: 310px;
+        //background-color: white;
+        //padding: 2%;
+        //border-radius: .2rem;
+        //border: solid 1px lightgrey;
+        .site-catalog__title{
+            margin-top: 50px;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            svg{
+                color: lightgrey;
+                margin-right: 5px;
             }
-            &:after{
-                content: '<';
-                color: #4f5a90;
+            p{
+                a{
+                    color: rgb(77, 123, 163);
+                    text-decoration: none;
+                    font-weight: 600;
+                    &:hover{
+                        color: rgb(45, 80, 92);
+                    }
+                }
             }
         }
-    }
-    .tech-rows{
-        .row{
-            transition: linear all .5s;
-            margin: 10px 0;
-            span{
-                font-size: 46px;
-                margin-left: 45px;
-                white-space: nowrap;
-                font-family: "Roboto Mono";
-                &:nth-child(odd){
-                    color: #5a616d;
-                }
-                &:nth-child(even){
-                    color: #9c9c9c;
-                }
-                &:before{
-                    content: '/';
-                    color: #4f5a90;
-                }
-                &:after{
-                    content: '<';
-                    color: #4f5a90;
-                }
-            }
+        img{
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+            border-radius: .2rem;
         }
     }
 }
 
 @media screen and (max-width: 768px) {
-    .tech-rows {
-        .row {
-            span {
-                font-size: 26px !important;
+    .home-frame-3-wrapper{
+        h3{
+            font-size: 2em;
+        }
+        .site-catalog{
+            margin-top: 20px;
+            width: 90%;
+            min-width: 310px;
+            p{
+                font-size: 1.8em;
             }
         }
     }

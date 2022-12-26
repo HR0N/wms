@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.bunny.net/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 // Variables
 @import 'variables';
@@ -9,16 +10,22 @@
 
 // Default
 @import 'default';
-@import "header_component";
-@import 'home';
-@import "home_frame_1";
-@import "home_frame_2";
-@import "home_frame_3";
 
 // Bootstrap
 //@import 'bootstrap/scss/bootstrap';
 @import "h-boobstrap.css";
 
-// Fonts
-//@import "fonts/fonts.css";
+// Header & Footer
+@import "header_component";
+@import "footer_component";
+
+// Home
+@import 'home';
+@import "home_frame_1";
+@import "home_frame_2";
+@import "home_frame_3";
+@import "home_frame_4";
+@import "home_frame_5";
+
+
 
